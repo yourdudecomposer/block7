@@ -1,0 +1,16 @@
+@import './colors.scss';
+.footer{
+    padding-bottom: 19px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $grey-text;
+    border-top: 1px solid $light-green;
+
+    p{
+        margin: 0;
+        opacity: 72%;
+        margin-top: 16px;
+    }
+}

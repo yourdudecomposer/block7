@@ -1,0 +1,44 @@
+@import './colors.scss';
+
+
+
+.intro-article__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: $black-text;
+    margin: 24px 16px 16px 16px;
+    position: relative;
+
+    .text__p {
+        margin: 0;
+    }
+
+    .text__768 {
+        display: none;
+
+
+    }
+
+    :nth-child(2) {
+        margin-top: 24px;
+    }
+}
+
+.intro-article__expand {
+    margin-left: 16px;
+}
+
+.expand {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+
+
+    .expand__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-text;
+        margin: 0;
+        margin-left: 8px;
+    }
+}

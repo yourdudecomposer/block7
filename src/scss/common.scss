@@ -1,0 +1,24 @@
+@import './fonts.css';
+@import './colors.scss';
+
+html {
+  font-family: 'TT Lakes';
+  background-color: $grey-background;
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* *{
+    border: .1px solid;
+} */

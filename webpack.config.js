@@ -17,7 +17,10 @@ module.exports = {
 
   // Source maps для удобства отладки
   devtool: "source-map",
-
+  devServer: {
+    watchFiles: ["src/*.html"],
+    hot: true,
+  },
   module: {
     rules: [
       // Транспилируем js с babel
@@ -52,14 +55,14 @@ module.exports = {
       },
 
       // Подключаем шрифты из css
-      {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: "file-loader?name=./fonts/[name].[ext]",
-          },
-        ],
-      },
+      // {
+      //   test: /\.(eot|ttf|woff|woff2)$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader?name=./fonts/[name].[ext]",
+      //     },
+      //   ],
+      // },
 
       // Подключаем картинки из css
       {
@@ -75,7 +78,7 @@ module.exports = {
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: "Webpack 5 Starter",
+      title: "CPS",
       template: "./src/index.html",
       inject: true,
       minify: {

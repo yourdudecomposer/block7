@@ -1,0 +1,28 @@
+@import './colors.scss';
+
+.page-header {
+    padding-top: 24px;
+}
+
+.page-title {
+    .page-title__text {
+        margin: 0;
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        margin-left: 16px;
+        color: $black-text;
+        font-weight: bold;
+    }
+
+    &::before {
+        content: '';
+        width: 8px;
+        height: 40px;
+        background: #41F6D7;
+        position: absolute;
+        border-radius: 4px;
+        left: -4px;
+        top: px;
+    }
+}
