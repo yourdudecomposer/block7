@@ -1,0 +1,25 @@
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import './brands__swiper.scss';
+@import './appliances__swiper.scss';
+@import './prices__swiper.scss';
+
+
+.swiper {
+    &-pagination {
+      display: flex; //изменяем тип отображения на flex-контейнер
+      justify-content: center; //центрируем bullets по горизонтали
+      &-bullet {
+        height: 12px; // устанавливаем высоту bullets на 12 px
+        width: 12px;  // устанавливаем ширину bullets на 12 px
+        background: #DDD;  // устанавливаем цвет неактивных bullets
+        border-radius: 50%;  // делаем их круглыми
+        margin: 0 6px;  // устанавливаем отступ по горизонтали в 6px
+  
+        &-active {
+          background: #B5B6BC; //устанавливем цвет для активных bullets
+        }
+      }
+    }
+  }
