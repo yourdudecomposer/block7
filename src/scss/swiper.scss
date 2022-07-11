@@ -1,12 +1,15 @@
 @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
 @import '../../node_modules/swiper/modules/pagination/pagination.scss';
-@import './brands__swiper.scss';
-@import './appliances__swiper.scss';
-@import './prices__swiper.scss';
+@import './swiper-brands.scss';
+@import './swiper-appliances.scss';
+@import './swiper-prices.scss';
 
 
 .swiper {
+    &-slide{
+        flex-shrink: 1;
+    }
     &-pagination {
       display: flex; //изменяем тип отображения на flex-контейнер
       justify-content: center; //центрируем bullets по горизонтали

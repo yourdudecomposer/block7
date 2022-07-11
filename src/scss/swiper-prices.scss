@@ -1,0 +1,68 @@
+@import './colors.scss';
+
+.prices__swiper {
+    height: 260px;
+
+    .swiper-slide {
+        padding: 16px 8px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 16px;
+    }
+}
+
+.swiper-price__button {
+    width: 260px;
+    height: 200px;
+    background-color: $white;
+    position: relative;
+    border-radius: 6px;
+    padding: 16px;
+box-sizing: border-box;
+    dl {
+        margin: 0;
+        font-size: 14px;
+
+        dt {
+            line-height: 16px;
+            color: $grey-text;
+            margin-bottom: 4px;
+        }
+
+        dd {
+            margin: 0;
+            line-height: 18px;
+            color: $black-text;
+            margin-bottom: 16px;
+        }
+    }
+
+    .swiper-price__offer-button {
+        width: 119px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        background-color: $pink-offer-btn;
+        border-radius: 16px;
+        justify-content: space-between;
+        text-decoration: none;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+
+        .swiper-price__offer-button-text {
+            text-transform: uppercase;
+            color: $white;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 24px;
+            margin-left: 12px;
+        }
+
+        .swiper-price__offer-button-icon {
+            margin-right: 8px;
+        }
+    }
+}

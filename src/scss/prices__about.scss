@@ -1,0 +1,22 @@
+@import './colors.scss';
+
+.prices__about {
+    margin: 0 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black-text;
+}
+
+.prices__offer {
+    width: 192px;
+    margin: 16px;
+
+    .prices__offer-text {
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-text;
+        font-weight: 500;
+        display: inline;
+    }
+}
