@@ -14,7 +14,7 @@ for (let i = 0; i < items.length; i++) {
 
 
 let close = document.querySelector('.header__burger-back'),
-    popUp = document.querySelector('.mobile-menu');
+    popUp = document.querySelector('.pop-up-nav');
 close.addEventListener('click', () => {
     popUp.style.transform = 'translateX(-100%)';
 })
