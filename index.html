@@ -93,15 +93,22 @@
                 <h2 class="feedback__title-text">Обратная связь</h2>
             </div>
             <form class="form">
-                <input type="text" name="text">
-                <input type="email" name="email">
-                <input type="number" name="phone">
-                <textarea name="massage"></textarea>
+                <input placeholder="Имя" type="text" name="text">
+                <input placeholder="Телефон" type="email" name="email">
+                <input placeholder="Электронная почта" type="number" name="phone">
+                <textarea placeholder="Сообщение" name="massage"></textarea>
                 <p class="form__agree">
-                    Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с нашей
-                    политикой конфиденциальности
+                    Нажимая “отправить”, вы даете согласие на <a href="#" class="form__agree--red">обработку
+                        персональных данных</a> и соглашаетесь с нашей
+                    <a href="#" class="form__agree--red">политикой конфиденциальности</a>
                 </p>
-                <input type="submit" value="ОТПРАВИТЬ">
+                <div class="feedback__submit">
+                    <input type="submit" id="feedback__submit" value="">
+                    <label class="feedback__submit-label" for="feedback__submit">
+                        <p>ОТПРАВИТЬ</p><img src="./img/swiper-offer-btn.svg" alt="">
+                    </label>
+                </div>
+
             </form>
 
         </div>
