@@ -1,16 +1,21 @@
 @import './colors.scss';
 
-.feedback {
+.feedback,
+.call {
     z-index: 2;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 0px;
     transform: translateX(-100%);
-    transition: .3s ease-out;
+    // transform: translateX(0%);
+    transition: .2s linear;
     background-color: $white ;
     height: 676px;
 }
 
-.feedback__close-btn {
+
+
+.feedback__close-btn,
+.call__close-btn {
     width: 40px;
     height: 40px;
     padding: 0;
@@ -18,7 +23,8 @@
     margin: 24px 16px;
     border-radius: 50%;
 
-    .feedback__close-btn-icon {
+    .feedback__close-btn-icon,
+    .call__close-btn-icon {
         width: 40px;
         height: 40px;
         display: block;
@@ -27,10 +33,12 @@
 
 
 
-.feedback__title {
+.feedback__title,
+.call__title {
     position: relative;
 
-    .feedback__title-text {
+    .feedback__title-text,
+    .call__title-text {
         margin: 0;
         font-size: 24px;
         line-height: 32px;
@@ -54,7 +62,8 @@
 
 }
 
-.feedback__form {
+.feedback__form,
+.call__form {
     padding: 0 16px;
 
     input,
@@ -70,6 +79,7 @@
         height: 48px;
     }
 
+
     textarea {
         height: 118px;
         resize: none;
@@ -83,7 +93,8 @@
         font-weight: 500;
     }
 
-    .form__agree {
+    .form__agree,
+    .call__agree {
         margin: 0;
         color: $grey-text;
         font-size: 14px;
@@ -91,7 +102,8 @@
         margin-bottom: 19px;
     }
 
-    .form__agree--red {
+    .form__agree--red,
+    .call__agree--red {
         color: $red-text;
         text-decoration: none;
     }
@@ -99,27 +111,26 @@
 }
 
 
-.feedback__submit {
+.feedback__submit,
+.call__submit {
     input[type='submit'] {
         height: 1px;
         width: 1px;
         position: absolute;
         overflow: hidden;
         clip: rect(0 0 0 0);
-        // display: none;
     }
 
-    input[type='submit']:focus+.feedback__submit-label {
-        border: 2px solid blue;
-
-    }
+    // input[type='submit']:focus+.feedback__submit-label {
+    //     outline: 2px solid transparent;
+    // }
 
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
-    .feedback__submit-label {
-        border: 2px solid transparent;
+    .feedback__submit-label,
+    .call__submit-label {
         cursor: pointer;
         width: 136px;
         height: 32px;
@@ -135,11 +146,11 @@
             line-height: 24px;
             font-weight: bold;
             margin: 0;
-            margin-left: 14px;
+            margin-left: 16px;
         }
 
         img {
-            margin-right: 7px;
+            margin-right: 9px;
         }
     }
 }
