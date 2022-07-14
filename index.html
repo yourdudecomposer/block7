@@ -155,29 +155,40 @@
                     <li class="page-nav__item"><a href="#" class="page-nav__link">Отзывы</a></li>
                 </ul>
             </nav>
-            <article class="intro-article">
-                <div class="intro-article__text text">
-                    <p class="text__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
-                        нас
-                        вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="text__p text__768">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                        партнера, что
-                        подтверждает
-                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                        и, в свою очередь, советуют нас родным и близким.</p>
-                </div>
-                <div class="intro-article__expand expand">
-                    <img src="./img/expand.svg" alt="expand" class="expand__logo">
-                    <p class="expand__text">Читать далее</p>
-                </div>
-            </article>
-            <img class="intro-article__img intro-img" src="./img/office.jpg" alt="">
+            <div class="art-img-container">
+                <article class="intro-article">
+                    <div class="intro-article__text text">
+                        <p class="text__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                            у
+                            нас
+                            вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="text__p text__all-hidden"><span class="text__768">Мы успешно работаем с
+                                1992 года и заслужили репутацию
+                                надежного
+                                партнера</span><span class="text__1440">, что
+                                подтверждает
+                                большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                                рекомендациям
+                                и, в свою очередь, советуют нас родным и близким.</span></p>
+                        <p class="text__p text__rest-hide text__rest-margin">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Consequuntur, voluptatum cumque, quaerat sed ad repellat quis magnam quia
+                            voluptatibus nam fugit. Totam, sed inventore laborum culpa voluptatem blanditiis quod ad!
+                        </p>
+                    </div>
+                    <div class="intro-article__expand expand">
+                        <img src="./img/expand.svg" alt="expand" class="expand__logo">
+                        <p class="expand__text">Читать далее</p>
+                    </div>
+                </article>
+                <img class="intro-article__img intro-img" src="./img/office.jpg" alt="">
+            </div>
+
         </section>
         <section class="brands">
             <h2 class="brands__title section-title">Ремонт техники различных брендов</h2>
             <div class="swiper-brands swiper">
                 
-                <div class="swiper-wrapper">
+                <div class="brands-container swiper-wrapper">
                     
 
                     <div class="swiper-slide">
@@ -240,12 +251,6 @@
                             <img src="img/go.svg" alt="" class="swiper-brand__button-icon">
                         </a>
                     </div>
-                    <div class="swiper-slide hide768 hide1120">
-                        <a class="swiper-brand__button" href="#">
-                            <img src="img/brands/apple.svg" alt="">
-                            <img src="img/go.svg" alt="" class="swiper-brand__button-icon">
-                        </a>
-                    </div>
                 </div>
                 
                 <div class="swiper-pagination"></div>
@@ -257,6 +262,16 @@
                 
                 <div class="swiper-wrapper">
                     
+                    <div class="swiper-slide"> <a class="swiper-appliances__button" href="#">
+                            <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
+                            <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
+                        </a>
+                    </div>
+                    <div class="swiper-slide"> <a class="swiper-appliances__button" href="#">
+                            <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
+                            <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
+                        </a>
+                    </div>
                     <div class="swiper-slide"> <a class="swiper-appliances__button" href="#">
                             <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
                             <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
