@@ -1,8 +1,11 @@
-@import './colors.scss';
+@import '../technical/colors.scss';
 
-.feedback,
-.call {
-    z-index: 2;
+.modale-back {
+    height: 100%;
+}
+
+.modal {
+    z-index: 3;
     position: absolute;
     top: 0px;
     transform: translateX(-100%);
@@ -10,8 +13,17 @@
     transition: .2s linear;
     background-color: $white ;
     height: 676px;
+
 }
 
+@media (min-width: 768px) {
+    .modal {
+        width: 320px;
+        height: 100%;
+        position: fixed;
+        overflow: scroll;
+    }
+}
 
 
 .feedback__close-btn,
@@ -32,9 +44,7 @@
 }
 
 
-
-.feedback__title,
-.call__title {
+.modal__title {
     position: relative;
 
     .feedback__title-text,
@@ -120,10 +130,6 @@
         overflow: hidden;
         clip: rect(0 0 0 0);
     }
-
-    // input[type='submit']:focus+.feedback__submit-label {
-    //     outline: 2px solid transparent;
-    // }
 
     display: flex;
     align-items: center;

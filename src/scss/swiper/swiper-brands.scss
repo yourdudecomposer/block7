@@ -1,0 +1,72 @@
+// @import '../colors.scss';
+
+.swiper-brands {
+    height: 140px;
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 24px;
+    }
+
+    .swiper-brand__button {
+        box-sizing: border-box;
+        height: 72px;
+        background-color: $white;
+        border-radius: 6px;
+        border: 1px solid $grey-border;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        width: 240px;
+    }
+
+    .swiper-slide {
+        padding-top: 16px;
+        padding-left: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper-brands {
+        height: auto;
+        padding: 24px;
+        padding-right: 0;
+        padding-bottom: 8px;
+
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .swiper-slide {
+                width: 224px;
+                height: 72px;
+                padding: 0;
+                margin-bottom: 16px;
+                margin-right: 24px;
+
+                a {
+                    width: 224px;
+                    height: 72px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+.swiper-brands__expand-btn{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .swiper-brands__expand-btn{
+        display: block;
+    }
+}

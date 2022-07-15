@@ -1,3 +1,5 @@
+import { closeModal, openModal } from "./modalMove";
+
 let items = document.querySelectorAll('.list__link');
 for (let i = 0; i < items.length; i++) {
     items[i].addEventListener('click', () => {
@@ -15,12 +17,14 @@ for (let i = 0; i < items.length; i++) {
 
 let close = document.querySelector('.header__burger-back'),
     popUp = document.querySelector('.pop-up-nav');
+
 close.addEventListener('click', () => {
-    popUp.style.transform = 'translateX(-100%)';
+    closeModal(popUp);
 })
+
 
 
 let open = document.querySelector('.header__round-link');
 open.addEventListener('click', () => {
-    popUp.style.transform = 'translateX(0%)';
+    openModal(popUp);      
 })

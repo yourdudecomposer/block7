@@ -6,12 +6,15 @@ let modalCall = document.querySelector('.call'),
 
 close.addEventListener('click', () => {
     closeModal(modalCall);
+    modalCall.style.boxShadow = "none"
+
 })
 
 open.addEventListener('click', () => {
     closeModal(document.querySelector('.pop-up-nav'));
     setTimeout(() => {
         openModal(modalCall);
+        modalCall.style.boxShadow = "16px 0px 52px 0px rgba(14, 24, 80, 0.2)"
     }, 250)
 })
 

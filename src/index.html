@@ -14,9 +14,9 @@
 <body>
     <header class="site-header">
         <div class="site-header__left-side">
-            <a href="#" class="header__round-link">
+            <button class="header__round-link">
                 <img src="./img/menu-icons/burger.svg" alt="Меню" class="round-icon">
-            </a>
+            </button>
             <a href="" class="header__logo-link">
                 <img src="./img/logo.svg" alt="" class="logo">
             </a>
@@ -45,30 +45,33 @@
     </header>
     <div class="modale-back">
         <div class="pop-up-nav">
-            <header class="header">
-                <a href="#" class="header__link">
-                    <img src="./img/menu-icons/close.svg" alt="close menu" class="header__burger-back">
-                </a>
-                <a href="#" class="header__link-logo">
-                    <img src="./img/logo.svg" alt="" class="header__logo">
-                </a>
-                <a href="#" class="header__link">
-                    <img src="./img/menu-icons/search.svg" alt="searh" class="header__search">
-                </a>
-            </header>
-            <nav class="nav">
-                <ul class="list nav__list">
-                    <li class="list__item"><a href="#" class="list__link--active list__link ">Ремонт
-                            техники</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Услуги и сервисы</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Корпоративным клиентам</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Продавцам техники</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Партнерам</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Производителям</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Наши сервисные центры</a></li>
-                    <li class="list__item"><a href="#" class="list__link">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="flex-container">
+                <header class="header">
+                    <a href="#" class="header__link">
+                        <img src="./img/menu-icons/close.svg" alt="close menu" class="header__burger-back">
+                    </a>
+                    <a href="#" class="header__link-logo">
+                        <img src="./img/logo.svg" alt="" class="header__logo">
+                    </a>
+                    <a href="#" class="header__link">
+                        <img src="./img/menu-icons/search.svg" alt="searh" class="header__search">
+                    </a>
+                </header>
+                <nav class="nav">
+                    <ul class="list nav__list">
+                        <li class="list__item"><a href="#" class="list__link--active list__link ">Ремонт
+                                техники</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Услуги и сервисы</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Корпоративным клиентам</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Продавцам техники</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Партнерам</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Производителям</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Наши сервисные центры</a></li>
+                        <li class="list__item"><a href="#" class="list__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
             <footer class="pop-up-nav__footer">
                 <div class="contact">
                     <div class="contact__icons">
@@ -93,7 +96,7 @@
             <button class="feedback__close-btn">
                 <img src="./img/menu-icons/close.svg" alt="" class="feedback__close-btn-icon">
             </button>
-            <div class="feedback__title">
+            <div class="modal__title">
                 <h2 class="feedback__title-text">Обратная связь</h2>
             </div>
             <form class="feedback__form">
@@ -120,7 +123,7 @@
             <button class="call__close-btn">
                 <img src="./img/menu-icons/close.svg" alt="" class="call__close-btn-icon">
             </button>
-            <div class="call__title">
+            <div class="modal__title">
                 <h2 class="call__title-text">Заказать звонок</h2>
             </div>
             <form class="call__form">
@@ -140,6 +143,7 @@
             </form>
 
         </div>
+        <div class="blur"></div>
     </div>
 
     <main class="main">
@@ -158,29 +162,40 @@
                     <li class="page-nav__item"><a href="#" class="page-nav__link">Отзывы</a></li>
                 </ul>
             </nav>
-            <article class="intro-article">
-                <div class="intro-article__text text">
-                    <p class="text__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
-                        нас
-                        вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="text__p text__768">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                        партнера, что
-                        подтверждает
-                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                        и, в свою очередь, советуют нас родным и близким.</p>
-                </div>
-                <div class="intro-article__expand expand">
-                    <img src="./img/expand.svg" alt="expand" class="expand__logo">
-                    <p class="expand__text">Читать далее</p>
-                </div>
-            </article>
-            <img class="intro-article__img intro-img" src="./img/office.jpg" alt="">
+            <div class="art-img-container">
+                <article class="intro-article">
+                    <div class="intro-article__text text">
+                        <p class="text__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                            у
+                            нас
+                            вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="text__p text__all-hidden"><span class="text__768">Мы успешно работаем с
+                                1992 года и заслужили репутацию
+                                надежного
+                                партнера</span><span class="text__1440">, что
+                                подтверждает
+                                большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                                рекомендациям
+                                и, в свою очередь, советуют нас родным и близким.</span></p>
+                        <p class="text__p text__rest-hide text__rest-margin">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Consequuntur, voluptatum cumque, quaerat sed ad repellat quis magnam quia
+                            voluptatibus nam fugit. Totam, sed inventore laborum culpa voluptatem blanditiis quod ad!
+                        </p>
+                    </div>
+                    <div class="intro-article__expand expand">
+                        <img src="./img/expand.svg" alt="expand" class="expand__logo">
+                        <p class="expand__text">Читать далее</p>
+                    </div>
+                </article>
+                <img class="intro-article__img intro-img" src="./img/office.jpg" alt="">
+            </div>
+
         </section>
         <section class="brands">
             <h2 class="brands__title section-title">Ремонт техники различных брендов</h2>
             <div class="swiper-brands swiper">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="brands-container swiper-wrapper">
                     <!-- Slides -->
 
                     <div class="swiper-slide">
@@ -231,19 +246,19 @@
                             <img src="img/go.svg" alt="" class="swiper-brand__button-icon">
                         </a>
                     </div>
-                    <div class="swiper-slide hide768 hide1120">
+                    <div class="swiper-slide hide768 hide1440">
                         <a class="swiper-brand__button" href="#">
                             <img src="img/brands/lenovo.svg" alt="">
                             <img src="img/go.svg" alt="" class="swiper-brand__button-icon">
                         </a>
                     </div>
-                    <div class="swiper-slide hide768 hide1120">
+                    <div class="swiper-slide hide768 hide1440">
                         <a class="swiper-brand__button" href="#">
                             <img src="img/brands/samsung.svg" alt="">
                             <img src="img/go.svg" alt="" class="swiper-brand__button-icon">
                         </a>
                     </div>
-                    <div class="swiper-slide hide768 hide1120">
+                    <div class="swiper-slide hide768 hide1440">
                         <a class="swiper-brand__button" href="#">
                             <img src="img/brands/apple.svg" alt="">
                             <img src="img/go.svg" alt="" class="swiper-brand__button-icon">
@@ -252,6 +267,13 @@
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
+                <div class="swiper-brands__expand-btn expand-btn">
+                    <div class="expand-btn-container">
+                        <img src="./img/expand.svg" alt="expand" class="expand-btn__logo">
+                        <p class="expand-btn__text">Показать</p>
+                    </div>
+
+                </div>
             </div>
         </section>
         <section class="appliances">
@@ -275,7 +297,27 @@
                             <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
                         </a>
                     </div>
-                    <div class="swiper-slide"> <a class="swiper-appliances__button" href="#">
+                    <div class="swiper-slide hide768"> <a class="swiper-appliances__button" href="#">
+                            <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
+                            <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
+                        </a>
+                    </div>
+                    <div class="swiper-slide hide768 hide1440"> <a class="swiper-appliances__button" href="#">
+                            <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
+                            <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
+                        </a>
+                    </div>
+                    <div class="swiper-slide hide768 hide1440"> <a class="swiper-appliances__button" href="#">
+                            <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
+                            <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
+                        </a>
+                    </div>
+                    <div class="swiper-slide hide768 hide1440"> <a class="swiper-appliances__button" href="#">
+                            <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
+                            <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
+                        </a>
+                    </div>
+                    <div class="swiper-slide hide768 hide1440"> <a class="swiper-appliances__button" href="#">
                             <p class="swiper-appliances__button-text">Ремонт ноутбуков </p>
                             <img src="img/go.svg" alt="" class="swiper-appliances__button-icon">
                         </a>
@@ -284,104 +326,125 @@
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
+                <div class="swiper-appliances__expand-btn expand-btn">
+                    <div class="expand-btn-container">
+                        <img src="./img/expand.svg" alt="expand" class="expand-btn__logo">
+                        <p class="expand-btn__text">Показать</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="prices">
+
             <h2 class="prices__title section-title">Цены на услуги</h2>
-            <div class="prices__swiper swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
 
-                    <div class="swiper-slide">
-                        <div class="swiper-price__button">
-                            <dl>
-                                <dt>Ремонтные услуги</dt>
-                                <dd>Тестирование с выдачей технического заключения</dd>
-                                <dt>Цена</dt>
-                                <dd>Бесплатно</dd>
-                                <dt>Срок</dt>
-                                <dd>30-120 мин</dd>
-                            </dl>
-                            <a class="swiper-price__offer-button" href="#">
-                                <p class="swiper-price__offer-button-text">Заказать</p>
-                                <img src="./img/swiper-offer-btn.svg" alt="" class="swiper-price__offer-button-icon">
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-price__button">
-                            <dl>
-                                <dt>Ремонтные услуги</dt>
-                                <dd>Тестирование с выдачей технического заключения</dd>
-                                <dt>Цена</dt>
-                                <dd>Бесплатно</dd>
-                                <dt>Срок</dt>
-                                <dd>30-120 мин</dd>
-                            </dl>
-                            <a class="swiper-price__offer-button" href="#">
-                                <p class="swiper-price__offer-button-text">Заказать</p>
-                                <img src="./img/swiper-offer-btn.svg" alt="" class="swiper-price__offer-button-icon">
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-price__button">
-                            <dl>
-                                <dt>Ремонтные услуги</dt>
-                                <dd>Тестирование с выдачей технического заключения</dd>
-                                <dt>Цена</dt>
-                                <dd>Бесплатно</dd>
-                                <dt>Срок</dt>
-                                <dd>30-120 мин</dd>
-                            </dl>
-                            <a class="swiper-price__offer-button" href="#">
-                                <p class="swiper-price__offer-button-text">Заказать</p>
-                                <img src="./img/swiper-offer-btn.svg" alt="" class="swiper-price__offer-button-icon">
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-price__button">
-                            <dl>
-                                <dt>Ремонтные услуги</dt>
-                                <dd>Тестирование с выдачей технического заключения</dd>
-                                <dt>Цена</dt>
-                                <dd>Бесплатно</dd>
-                                <dt>Срок</dt>
-                                <dd>30-120 мин</dd>
-                            </dl>
-                            <a class="swiper-price__offer-button" href="#">
-                                <p class="swiper-price__offer-button-text">Заказать</p>
-                                <img src="./img/swiper-offer-btn.svg" alt="" class="swiper-price__offer-button-icon">
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-price__button">
-                            <dl>
-                                <dt>Ремонтные услуги</dt>
-                                <dd>Тестирование с выдачей технического заключения</dd>
-                                <dt>Цена</dt>
-                                <dd>Бесплатно</dd>
-                                <dt>Срок</dt>
-                                <dd>30-120 мин</dd>
-                            </dl>
-                            <a class="swiper-price__offer-button" href="#">
-                                <p class="swiper-price__offer-button-text">Заказать</p>
-                                <img src="./img/swiper-offer-btn.svg" alt="" class="swiper-price__offer-button-icon">
-                            </a>
-                        </div>
-
-                    </div>
-
+            <div class="prices__table">
+                <div class="prices__table-head">
+                    <p class="prices__table-title1">Ремонтные услуги</p>
+                    <p class="prices__table-title2">Цена</p>
+                    <p class="prices__table-title3">Срок</p>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="prices__table-body prices__swiper swiper">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <div class="swiper-price__button">
+                                <dl>
+                                    <dt>Ремонтные услуги</dt>
+                                    <dd>Тестирование с выдачей технического заключения</dd>
+                                    <dt>Цена</dt>
+                                    <dd>Бесплатно</dd>
+                                    <dt>Срок</dt>
+                                    <dd>30-120 мин</dd>
+                                </dl>
+                                <a class="swiper-price__offer-button" href="#">
+                                    <p class="swiper-price__offer-button-text">Заказать</p>
+                                    <img src="./img/swiper-offer-btn.svg" alt=""
+                                        class="swiper-price__offer-button-icon">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-price__button">
+                                <dl>
+                                    <dt>Ремонтные услуги</dt>
+                                    <dd>Тестирование с выдачей технического заключения</dd>
+                                    <dt>Цена</dt>
+                                    <dd>Бесплатно</dd>
+                                    <dt>Срок</dt>
+                                    <dd>30-120 мин</dd>
+                                </dl>
+                                <a class="swiper-price__offer-button" href="#">
+                                    <p class="swiper-price__offer-button-text">Заказать</p>
+                                    <img src="./img/swiper-offer-btn.svg" alt=""
+                                        class="swiper-price__offer-button-icon">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-price__button">
+                                <dl>
+                                    <dt>Ремонтные услуги</dt>
+                                    <dd>Тестирование с выдачей технического заключения</dd>
+                                    <dt>Цена</dt>
+                                    <dd>Бесплатно</dd>
+                                    <dt>Срок</dt>
+                                    <dd>30-120 мин</dd>
+                                </dl>
+                                <a class="swiper-price__offer-button" href="#">
+                                    <p class="swiper-price__offer-button-text">Заказать</p>
+                                    <img src="./img/swiper-offer-btn.svg" alt=""
+                                        class="swiper-price__offer-button-icon">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-price__button">
+                                <dl>
+                                    <dt>Ремонтные услуги</dt>
+                                    <dd>Тестирование с выдачей технического заключения</dd>
+                                    <dt>Цена</dt>
+                                    <dd>Бесплатно</dd>
+                                    <dt>Срок</dt>
+                                    <dd>30-120 мин</dd>
+                                </dl>
+                                <a class="swiper-price__offer-button" href="#">
+                                    <p class="swiper-price__offer-button-text">Заказать</p>
+                                    <img src="./img/swiper-offer-btn.svg" alt=""
+                                        class="swiper-price__offer-button-icon">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-price__button">
+                                <dl>
+                                    <dt>Ремонтные услуги</dt>
+                                    <dd>Тестирование с выдачей технического заключения</dd>
+                                    <dt>Цена</dt>
+                                    <dd>Бесплатно</dd>
+                                    <dt>Срок</dt>
+                                    <dd>30-120 мин</dd>
+                                </dl>
+                                <a class="swiper-price__offer-button" href="#">
+                                    <p class="swiper-price__offer-button-text">Заказать</p>
+                                    <img src="./img/swiper-offer-btn.svg" alt=""
+                                        class="swiper-price__offer-button-icon">
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <p class="prices__about">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
                 получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>

@@ -39,11 +39,25 @@
     display: inline-block;
 
     &:first-child {
-        margin-left: 20px;
+        margin-left: 16px;
     }
 
     &:last-child {
-        margin-right: 20px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-nav__item {
+        display: inline-block;
+
+        &:first-child {
+            margin-left: 24px;
+        }
+
+        &:last-child {
+            margin-right: 24px;
+        }
     }
 }
 

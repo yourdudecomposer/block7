@@ -4,7 +4,10 @@ import './intro-article';
 import './swiper';
 import './pop-up-menu';
 import './feedback';
-import './call'
+import './call';
+import './blur';
+import './brands';
+import './appliance';
 
 
 

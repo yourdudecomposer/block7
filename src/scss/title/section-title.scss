@@ -1,6 +1,6 @@
-@import './colors.scss';
+@import '../technical/colors.scss';
 
-.section-title{
+.section-title {
     margin: 0;
     font-weight: normal;
     text-transform: uppercase;
@@ -10,4 +10,13 @@
     border-top: 1px solid $light-green;
     padding: 16px;
     padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        padding: 16px 24px;
+        padding-top: 15px;
+
+    }
+
 }

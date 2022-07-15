@@ -1,4 +1,4 @@
-@import './colors.scss';
+// @import '../colors.scss';
 
 .prices__swiper {
     height: 260px;
@@ -36,6 +36,11 @@ box-sizing: border-box;
             line-height: 18px;
             color: $black-text;
             margin-bottom: 16px;
+        }
+        @media (min-width: 768px){
+            dd {
+                margin-bottom: 0;
+            }
         }
     }
 

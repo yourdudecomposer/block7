@@ -1,14 +1,24 @@
+@import './header/header.scss';
+@import './page-header/page-header.scss';
+@import './brands/brands.scss';
+@import './appliances/appliances.scss';
+@import './prices/prices.scss';
+@import './footer/footer.scss';
+
+
+
+@import './title/section-title.scss';
+@import './menu/pop-up-nav.scss';
+@import './modals/modal.scss';
+@import './blur.scss';
+@import './expand-btn.scss';
+
+
+
+
+@import './technical/common.scss';
 @import '../../node_modules/normalize.css/normalize.css';
-@import './common.scss';
-@import './header.scss';
-@import './page-nav.scss';
-@import './page-title.scss';
-@import './intro-article.scss';
-@import './intro-img.scss';
-@import './section-title.scss';
-@import './brands.scss';
-@import './prices__about.scss';
-@import './footer.scss';
-@import './swiper.scss';
-@import './pop-up-nav.scss';
-@import './modal.scss'
+
+// *{
+//     border: .1px solid;
+// }

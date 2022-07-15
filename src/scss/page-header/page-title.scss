@@ -1,8 +1,6 @@
-@import './colors.scss';
+@import '../technical/colors.scss';
 
-.page-header {
-    padding-top: 24px;
-}
+
 
 .page-title {
     .page-title__text {
@@ -14,7 +12,11 @@
         color: $black-text;
         font-weight: bold;
     }
-
+@media (min-width: 768px){
+    .page-title__text {
+        margin-left: 24px;
+    }  
+}
     &::before {
         content: '';
         width: 8px;

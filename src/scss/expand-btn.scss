@@ -1,0 +1,17 @@
+.expand-btn {
+    &-container {
+        display: flex;
+        align-items: center;
+        width: 125px;
+        cursor: pointer;
+    }
+
+    &__logo {
+        margin-right: 8px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+}

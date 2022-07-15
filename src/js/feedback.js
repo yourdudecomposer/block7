@@ -6,12 +6,14 @@ let modalFeedback = document.querySelector('.feedback'),
 
 close.addEventListener('click', () => {
     closeModal(modalFeedback);
+
 })
 
 open.addEventListener('click', () => {
     closeModal(document.querySelector('.pop-up-nav'));
     setTimeout(() => {
         openModal(modalFeedback);
+
     }, 250)
 })
 
@@ -21,8 +23,6 @@ let color;
 let input = document.querySelector('.feedback__form input');
 input.addEventListener('focus', () => {
     color = (getComputedStyle(input).outline);
-    console.log(color)
-
 })
 //set color for btn
 let btn = document.querySelector(".feedback__submit-label");

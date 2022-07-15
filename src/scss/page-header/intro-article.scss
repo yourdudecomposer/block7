@@ -1,0 +1,89 @@
+@import '../technical/colors.scss';
+
+
+.intro-article__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: $black-text;
+    margin: 24px 16px 16px 16px;
+    position: relative;
+
+    .text__p {
+        margin: 0;
+    }
+
+    .text__768,
+    .text__1440,
+    .text__rest-hide {
+        display: none;
+    }
+
+    .text__rest-margin {
+        margin-top: 24px;
+    }
+
+    .text__all-hidden {
+        margin-top: 24px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .intro-article__text {
+        margin: 32px 24px 10px 24px;
+
+        .text__768 {
+            display: inline;
+        }
+
+
+
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .intro-article__text {
+        // margin: 32px 24px 10px 24px;
+
+        .text__1440 {
+            display: inline;
+        }
+    }
+}
+
+.intro-article__expand {
+    margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+    .intro-article__expand {
+        margin-left: 24px;
+    }
+
+}
+
+.expand {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    cursor: pointer;
+
+
+
+    .expand__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-text;
+        margin: 0;
+        margin-left: 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .expand {
+        margin-bottom: 32px;
+
+    }
+}

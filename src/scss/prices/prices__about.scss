@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import '../technical/colors.scss';
 
 .prices__about {
     margin: 0 16px;
@@ -18,5 +18,14 @@
         color: $black-text;
         font-weight: 500;
         display: inline;
+    }
+}
+
+@media (min-width: 768px){
+    .prices__about {
+        margin-left: 24px;
+    }
+    .prices__offer {
+        margin-left: 24px;
     }
 }

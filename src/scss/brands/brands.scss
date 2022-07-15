@@ -1,0 +1,19 @@
+@import '../swiper/swiper.scss';
+
+@media (min-width: 768px) {
+
+    .hide768 {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .hide768 {
+        display: block;
+    }
+
+    .hide1440 {
+        display: none;
+    }
+}
