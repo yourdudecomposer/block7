@@ -1,5 +1,6 @@
 @import '../technical/colors.scss';
-.footer{
+
+.footer {
     padding-bottom: 19px;
     text-align: center;
     font-size: 14px;
@@ -8,9 +9,37 @@
     color: $grey-text;
     border-top: 1px solid $light-green;
 
-    p{
+    p {
         margin: 0;
         opacity: 72%;
         margin-top: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 25px;
+
+        p {
+            flex: 1 1 0;
+            margin-top: 32px;
+        }
+
+        p:nth-child(1) {
+            text-align: left;
+        }
+
+        p:nth-child(2) {
+            text-align: center;
+        }
+
+        p:nth-child(3) {
+            text-align: right;
+
+        }       
     }
 }

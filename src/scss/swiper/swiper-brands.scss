@@ -38,6 +38,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
+            overflow: hidden;
 
             .swiper-slide {
                 width: 224px;
@@ -55,18 +56,22 @@
 
     }
 
+    .brands-container {
+        height: 176px;
+        transition: height .25s;
+    }
 
 }
 
 
 
 
-.swiper-brands__expand-btn{
+.swiper-brands__expand-btn {
     display: none;
 }
 
-@media (min-width: 768px){
-    .swiper-brands__expand-btn{
+@media (min-width: 768px) {
+    .swiper-brands__expand-btn {
         display: block;
     }
 }
