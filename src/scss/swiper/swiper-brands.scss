@@ -57,8 +57,44 @@
     }
 
     .brands-container {
-        height: 176px;
-        transition: height .25s;
+        max-height: 176px;
+        transition: max-height .25s;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .swiper-brands {
+        height: auto;
+        padding: 24px;
+        padding-right: 0;
+        padding-bottom: 8px;
+
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            overflow: hidden;
+
+            .swiper-slide {
+                width: 240px;
+                height: 72px;
+                padding: 0;
+                margin-bottom: 16px;
+                margin-right: 24px;
+
+                a {
+                    width: 240px;
+                    height: 72px;
+                }
+            }
+        }
+
+    }
+
+    .brands-container {
+        max-height: 176px;
+        transition: max-height .25s;
     }
 
 }

@@ -1,0 +1,26 @@
+.image-for-big-btn {
+    display: none;
+
+
+}
+
+@media (min-width: 1440px) {
+    .image-for-big-btn {
+        display: block;
+        position: fixed;
+        right: -50px;
+        transition: .25s ease-out;
+        z-index: 22;
+        width: 40px;
+        height: 40px;
+        top: 32px;
+        cursor: pointer;
+
+        img {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+    }
+
+}

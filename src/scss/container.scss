@@ -1,0 +1,16 @@
+@media (min-width: 1440px) {
+
+    .container {
+        display: flex;
+    }
+
+    .container-f-n-m {
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        flex: 1;
+        padding-top: 42px;
+    }
+
+    .footer {}
+}

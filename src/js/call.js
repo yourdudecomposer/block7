@@ -1,8 +1,12 @@
 
-import { closeModal, openModal } from "./modalMove";
+import { closeModal, openModal, openModalForBig,closeModalForBig } from "./modalMove";
 let modalCall = document.querySelector('.call'),
     close = document.querySelector('.call__close-btn'),
-    open = document.querySelector('.contact__call');
+    open = document.querySelector('.contact__call'),
+    bigBlur = document.querySelector('.big-blur'),
+    bigClose = document.querySelector('.image-for-big-btn');
+    ;
+
 
 close.addEventListener('click', () => {
     closeModal(modalCall);
@@ -11,13 +15,26 @@ close.addEventListener('click', () => {
 })
 
 open.addEventListener('click', () => {
-    closeModal(document.querySelector('.pop-up-nav'));
-    setTimeout(() => {
-        openModal(modalCall);
-        modalCall.style.boxShadow = "16px 0px 52px 0px rgba(14, 24, 80, 0.2)"
-    }, 250)
-})
+    let bigScreen = window.matchMedia('(min-width: 1440px)').matches;
+    if (!bigScreen) {
+        closeModal(document.querySelector('.pop-up-nav'));
+        setTimeout(() => {
+            openModal(modalCall);
+            modalCall.style.boxShadow = "16px 0px 52px 0px rgba(14, 24, 80, 0.2)"
+        }, 250)
+    } else {
 
+        openModalForBig(modalCall);
+    }
+})
+bigBlur.addEventListener('click', () => {
+    closeModalForBig(modalCall)
+})
+bigClose.addEventListener('click', () => {
+    closeModalForBig(modalCall)
+
+})
+// openModalForBig(modalCall)
 
 // get color from input
 let color;

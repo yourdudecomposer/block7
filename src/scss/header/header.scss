@@ -83,3 +83,9 @@
 
 
 }
+
+@media (min-width: 1440px) {
+    .site-header {
+        display: none;
+    }
+}

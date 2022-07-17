@@ -83,8 +83,8 @@
     }
 
     .appliances-container {
-        height: 176px;
+        max-height: 176px;
         overflow: hidden;
-        transition: height .25s;
+        transition: max-height .25s;
     }
 }

@@ -1,21 +1,58 @@
 
-import { closeModal, openModal } from "./modalMove";
+import { closeModal, openModal, openModalForBig, closeModalForBig } from "./modalMove";
 let modalFeedback = document.querySelector('.feedback'),
     close = document.querySelector('.feedback__close-btn'),
-    open = document.querySelector('.contact__chat');
+    open = document.querySelector('.contact__chat'),
+    bigBlur = document.querySelector('.big-blur'),
+    bigClose = document.querySelector('.image-for-big-btn');
+    ;
+    ;
+
+
+
 
 close.addEventListener('click', () => {
     closeModal(modalFeedback);
 
 })
 
-open.addEventListener('click', () => {
-    closeModal(document.querySelector('.pop-up-nav'));
-    setTimeout(() => {
-        openModal(modalFeedback);
+// open.addEventListener('click', () => {
+    
+//     closeModal(document.querySelector('.pop-up-nav'));
+//     setTimeout(() => {
+//         openModal(modalFeedback);
 
-    }, 250)
+//     }, 250)
+// })
+
+open.addEventListener('click', () => {
+    console.log(999);
+    
+    let bigScreen = window.matchMedia('(min-width: 1440px)').matches;
+    if (!bigScreen) {
+        closeModal(document.querySelector('.pop-up-nav'));
+        setTimeout(() => {
+            openModal(modalFeedback);
+            modalFeedback.style.boxShadow = "16px 0px 52px 0px rgba(14, 24, 80, 0.2)"
+        }, 250)
+    } else {
+        openModalForBig(modalFeedback)
+    }
 })
+
+
+bigBlur.addEventListener('click', () => {
+    closeModalForBig(modalFeedback)
+})
+bigClose.addEventListener('click', () => {
+    closeModalForBig(modalFeedback)
+
+})
+
+
+
+
+
 
 
 // get color from input
@@ -38,17 +75,3 @@ origBtn.addEventListener('focusout', () => {
 
 
 
-
-
-const warnTheSheep = (queue) => {
-    if (queue[queue.length - 1] === "wolf") return "Pls go away and stop eating my sheep";
-    let n;
-    for (let i = 0; i < queue.length; i++) {
-        if (queue[i] === "wolf") {
-            n = queue.length - i - 1; //находим н
-            break;
-        }
-    }
-    return "Oi! Sheep number " + n + " You are about to be eaten by a wolf!";
-};
-console.log(warnTheSheep(["sheep", "sheep", "wolf", "sheep", "sheep", "sheep"]));

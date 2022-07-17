@@ -10,4 +10,3 @@ import './brands';
 import './appliance';
 
 
-

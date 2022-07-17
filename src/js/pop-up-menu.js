@@ -14,6 +14,16 @@ for (let i = 0; i < items.length; i++) {
 
 }
 
+window.addEventListener('resize', () => {
+    if (window.matchMedia('(min-width: 1440px').matches && popUp.style.transform === 'translateX(-100%)') {
+        popUp.style.transform = 'translateX(0%)'
+    } else if (window.matchMedia('(max-width: 1439px').matches && popUp.style.transform === 'translateX(0%)') {
+        popUp.style.transform = 'translateX(-100%)'
+
+    }
+})
+
+
 
 let close = document.querySelector('.header__burger-back'),
     popUp = document.querySelector('.pop-up-nav');
@@ -26,5 +36,14 @@ close.addEventListener('click', () => {
 
 let open = document.querySelector('.header__round-link');
 open.addEventListener('click', () => {
-    openModal(popUp);      
+    openModal(popUp);
 })
+
+const index = (array, n) => {
+    for (let i = 0; i < array.length; i++) {
+        if (n === array.indexOf(array[i])) return array[i] ** n;
+        else if (n > array.length - 1) return -1;
+
+    }
+};
+

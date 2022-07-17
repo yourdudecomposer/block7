@@ -3,9 +3,21 @@
 }
 
 .show-more-brands {
-    height: 352px;
+    max-height: 350px;
 }
 
 .show-more-appliance {
-    height: 528px;
+    max-height: 528px;
+}
+
+@media (min-width: 1440px){
+    
+    .show-more-brands {
+        max-height: 265px;
+    }
+    
+    .show-more-appliance {
+        max-height: 348px;
+    }
+
 }
