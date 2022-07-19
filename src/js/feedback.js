@@ -5,8 +5,8 @@ let modalFeedback = document.querySelector('.feedback'),
     open = document.querySelector('.contact__chat'),
     bigBlur = document.querySelector('.big-blur'),
     bigClose = document.querySelector('.image-for-big-btn');
-    ;
-    ;
+;
+;
 
 
 
@@ -16,18 +16,10 @@ close.addEventListener('click', () => {
 
 })
 
-// open.addEventListener('click', () => {
-    
-//     closeModal(document.querySelector('.pop-up-nav'));
-//     setTimeout(() => {
-//         openModal(modalFeedback);
 
-//     }, 250)
-// })
 
 open.addEventListener('click', () => {
-    console.log(999);
-    
+
     let bigScreen = window.matchMedia('(min-width: 1440px)').matches;
     if (!bigScreen) {
         closeModal(document.querySelector('.pop-up-nav'));

@@ -1,7 +1,5 @@
-console.log('page-nav');
 let navItems = document.querySelectorAll('.page-nav__link'),
     navItemsParent = document.querySelectorAll('.page-nav__item');
-console.log(navItems);
 
 
 for (let i = 0; i < navItems.length; i++) {
